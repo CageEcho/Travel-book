@@ -38,4 +38,5 @@ s=s.replace('<style>','<style>\n'+'\n'.join(faces)+'\n',1)
 os.makedirs('dist',exist_ok=True)
 out='dist/土耳其12日-翻书旅行方案.html'
 open(out,'w',encoding='utf-8').write(s)
+open('docs/index.html','w',encoding='utf-8').write(s)  # GitHub Pages serves docs/
 print(out, os.path.getsize(out)//1024,'KB')

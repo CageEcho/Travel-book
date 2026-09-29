@@ -12,7 +12,9 @@
 
 ## 快速开始
 
-下载 [`dist/土耳其12日-翻书旅行方案.html`](dist/)，用 Chrome、Safari 或 Edge 打开。
+**在线看**：https://cageecho.github.io/Travel-book/
+
+或者下载 [`dist/土耳其12日-翻书旅行方案.html`](dist/)，用 Chrome、Safari 或 Edge 打开。
 
 - **电脑上效果最好**，翻书的立体效果最明显。
 - **手机建议横屏**，竖屏时页面底部会提示横过来看。
@@ -128,6 +130,7 @@
 | `scripts/fetch_fonts.sh` | 下载用到的开源字体到 `fonts/` |
 | `scripts/build.py` | 压缩照片、裁剪字体，打包成 `dist/` 里的单文件 |
 | `scripts/fetch_imgs.py` | 当初从 Wikimedia Commons 查找照片用的脚本 |
+| `docs/index.html` | 在线预览页（GitHub Pages），和 `dist/` 里的成品相同 |
 | `docs/screenshots/` | README 里的截图 |
 | `dist/` | 打包好的成品 |
 
@@ -180,7 +183,7 @@ PATH=.venv/bin:$PATH .venv/bin/python scripts/build.py
 
 1. 把用到的照片压缩到最长边 900 像素（使用 macOS 自带的 `sips`；其他系统直接复制原图，成品会大一些）。
 2. 只保留页面上实际用到的字符，把字体从约 47MB 裁到约 700KB。
-3. 把照片、字体、照片出处全部内嵌，输出到 `dist/土耳其12日-翻书旅行方案.html`，约 6MB。
+3. 把照片、字体、照片出处全部内嵌，输出到 `dist/土耳其12日-翻书旅行方案.html`，约 6MB，同时复制一份到 `docs/index.html` 作为在线预览。
 
 ## 已知限制
 
